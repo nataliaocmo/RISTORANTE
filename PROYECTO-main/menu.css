@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Handjet&family=Qwitcher+Grypen:wght@700&family=Roboto+Mono:wght@200&family=Tangerine&display=swap');
+
+/*header*/
+*{
+    font-family: 'Qwitcher Grypen', cursive;
+}
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: rgb(83,9,0);
+    background: radial-gradient(circle, rgba(83,9,0,1) 49%, rgba(123,49,49,1) 69%);
+    margin: 0px;
+}
+h1
+{  
+    display: flex;
+    color: white;
+    font-size: 3rem;
+    align-items: center;
+    padding: 1rem;
+}
+.btn
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav 
+{
+    position: relative;
+    display: inline-block;
+    background-color: rgb(83,9,0);
+}
+  
+.dropdown
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    text-decoration: none;
+    list-style: none;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown a {
+    color: black;
+    font-size: 2rem;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown a:hover {background-color: #b5a4a4}
+  
+.nav:hover .dropdown {
+    display: block;
+}
+  
+.nav:hover, .btn:hover {
+    background-color: #713838;
+}
+#cartimg
+{
+   filter: invert(1);
+}
+#menuimg
+{
+    filter: invert(1);
+}
+#btnmenu {
+    position: relative;
+    display: inline-block;
+
+}
+
+h2, h3,footer
+{
+    display: flex;
+    justify-content: center;
+    background: rgb(83,9,0);
+    background: radial-gradient(circle, rgba(83,9,0,1) 49%, rgba(123,49,49,1) 69%); 
+    color: white;
+    padding: 1rem;
+    margin: 0px;
+    font-size: 2rem;
+}
+footer a{
+    color: white; 
+    text-decoration: none;
+    margin: 20;
+    padding: 10px;
+}
+.img
+{
+    background-image: url("food.jpg");
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    text-shadow: 50%;
+    font-size: 5rem;
+    padding: 3rem;
+    margin: 0px;
+}
+#italia 
+{
+    margin: 2rem;
+    color: white;
+    text-shadow: 5px 5px 5px #000000;
+}
+
+.pidedomicilio {
+    
+    background: rgb(83,9,0);
+    background: radial-gradient(circle, rgba(83,9,0,1) 49%, rgb(100, 19, 19) 69%); 
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+.pidedomicilio:hover {
+    background-color: rgb(236, 236, 236); 
+    background-color: lightgrey;
+    filter: none;
+}
+
+
+.pidedomicilio a {
+    color: white; 
+    text-decoration: none;
+    font-size: 30px;
+}
+.comida{
+    flex-wrap: wrap;
+   
+    margin-top: 0px;
+}
+.comida > div {
+    position: relative;
+    margin: 0px;
+}
+.comida img {
+   
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    
+}
+.comida a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.comida div:hover a {
+    opacity: 1;
+    background-color:rgb(100, 25, 25); 
+    opacity: 0.7;
+}
+
+.recomendacion
+{
+    background-image: url("especialidad.jpg");
+    background-color: #cccccc;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+    text-align: center;
+    text-shadow: 50%;
+    font-size: 5rem;
+    padding: 3rem;
+    margin: 0px; 
+}
+.entradas
+{
+    background-image: url("entradas.jpg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+    text-align: center;
+    text-shadow: 50%;
+    font-size: 5rem;
+    padding:3rem;
+    margin: 0px; 
+}
+.Platosprincipales{
+    background-image: url("principal.avif");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+    text-align: center;
+    text-shadow: 50%;
+    font-size: 5rem;
+    padding: 3rem;
+    margin: 0px;
+}
+.Bedidas{
+    background-image: url("drinks.webp");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+    text-align: center;
+    text-shadow: 50%;
+    font-size: 5rem;
+    padding: 3rem;
+    margin: 0px;
+}
+.Postres{
+    background-image: url("ghelato.jpg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+    text-align: center;
+    text-shadow: 50%;
+    font-size: 5rem;
+    padding: 3rem;
+    margin: 0px;
+}
+
