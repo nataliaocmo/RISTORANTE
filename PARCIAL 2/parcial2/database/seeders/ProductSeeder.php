@@ -19,35 +19,121 @@ class ProductSeeder extends Seeder
 
         \App\Models\Product::create([
            
-           'name'=> "Burrata",
-           //'datos'=>"Con tomate, salsa pesto y tostada focaccia",
-           'price'=> 40.00,
-           //'imagen'=> "Imagenes/Burrata.png",
+           'name'=> "Pizza Peperoni",
+           'price'=> 85000,
+            'imagen'=> "PROYECTO-main\Comida\pizza_especialidad.jpg",
+           'category'=>"RECOMENDACIÓN DEL CHEF"
+       ]);
+       \App\Models\Product::create([
+           
+           'name'=> "Bruscheta",
+           'price'=> 28000,
+           'imagen'=> "PROYECTO-main\Comida\Bruschettas.jpg",
            'category'=>"ENTRADAS"
        ]);
        \App\Models\Product::create([
            
-           'name'=> "Dedos de Mozzarella",
-           //'datos'=>"5 unidades de dedos de mozzarella acompañados de miel mostasa",
-           'price'=> 28.00,
-           //'imagen'=> "Imagenes/Dedos De Mozzarella.png"
-           'category'=>"ENTRADAS"
-       ]);
-       \App\Models\Product::create([
-           
-           'name'=> "Langostinos Apanados",
-           //'datos'=>"7 unidades de langostinos apanados, acompañados de mayonesa siracha",
-           'price'=> 43.00,
-           //'imagen'=> "Imagenes/Langostinos Apanado.png"
+           'name'=> "Vuelta al Mundo en 80 quesos",
+           'price'=> 40000,
+           'imagen'=> "PROYECTO-main\Comida\Vulta_al_mundo_en_80_quesos.jpg",
            'category'=>"ENTRADAS"
         ]);
+        \App\Models\Product::create([
+           
+            'name'=> "Muffins de Pizza",
+            'price'=> 35000,
+            'imagen'=> "PROYECTO-main\Comida\Muffins de Pizza.jpg",
+            'category'=>"ENTRADAS"
+        ]);
+        \App\Models\Product::create([
+            
+            'name'=> "Pasta carbonara",
+            'price'=> 70000,
+            'imagen'=> "PROYECTO-main\Comida\Pasta_Carbonara.jpg",
+            'category'=>"PLATOS"
+        ]);
+        \App\Models\Product::create([
+            
+            'name'=> "Lasagna",
+            'price'=> 60000,
+            'imagen'=> "PROYECTO-main\Comida\Lasagna.jpg",
+            'category'=>"PLATOS"
+         ]);
+         \App\Models\Product::create([
+            
+            'name'=> "Pizza Cuatro Quesos",
+            'price'=> 80000,
+            'imagen'=> "PROYECTO-main\Comida\pizza_cuatro_quesos.jpg",
+            'category'=>"PLATOS"
+         ]);
+         \App\Models\Product::create([
+            
+            'name'=> "Vino tinto italiano",
+            'price'=> 20000,
+            'imagen'=> "PROYECTO-main\Comida\VINO-TINTO-ITALIANO.png",
+            'category'=>"BEBIDAS"
+         ]);
+         \App\Models\Product::create([
+            
+            'name'=> "Limonada fresca",
+            'price'=> 14000,
+            'imagen'=> "PROYECTO-main\Comida\Limonada.jpg",
+            'category'=>"BEBIDAS"
+         ]);
+         \App\Models\Product::create([
+            
+            'name'=> "Vino blanco",
+            'price'=> 20000,
+            'imagen'=> "PROYECTO-main\Comida\VINO-BLANCO.png",
+            'category'=>"BEBIDAS"
+         ]);
+         \App\Models\Product::create([
+            
+            'name'=> "Sangría",
+            'price'=> 23000,
+            'imagen'=> "PROYECTO-main\Comida\sangria.jpg",
+            'category'=>"BEBIDAS"
+         ]);
+         \App\Models\Product::create([
+            
+            'name'=> "Capuccino",
+            'price'=> 12000,
+            'imagen'=> "PROYECTO-main\Comida\capuccino.jpg",
+            'category'=>"BEBIDAS"
+         ]);
+         \App\Models\Product::create([
+            
+            'name'=> "Tiramisu",
+            'price'=> 13000,
+            'imagen'=> "PROYECTO-main\Comida\tiramisu.webp",
+            'category'=>"POSTRES"
+         ]);
+         \App\Models\Product::create([
+            
+            'name'=> "Cannoli",
+            'price'=> 10000,
+            'imagen'=> "PROYECTO-main\Comida\canoli.jpg",
+            'category'=>"POSTRES"
+         ]);
+         \App\Models\Product::create([
+            
+            'name'=> "Panna cotta",
+            'price'=> 15000,
+            'imagen'=> "PROYECTO-main\Comida\Panna_cotta.jpg",
+            'category'=>"POSTRES"
+         ]);
+         \App\Models\Product::create([
+            
+            'name'=> "Gelato",
+            'price'=> 8000,
+            'imagen'=> "PROYECTO-main\Comida\Gelato.jpg",
+            'category'=>"POSTRES"
+         ]);
     }
     public function definition(): array
     {
         return [
-            'name' => "Pizza Peperoni","Bruscheta","Vuelta al Mundo en 80 quesos","Muffins de Pizza","Pasta Carbonara","Lasagna","Pizza Cuatro Quesos","Vino Tinto Italiano","Limonada Fresca","Vino Blanco","Sangria","Capuccino","Tiramisa","Cannoli","Panna Cotta","Gelato",
-            'price' => 85000,25000,40000,35000,70000,60000,80000,20000,14000,20000,23000,12000,13000,10000,15000,8000,
-            'category'=>"Recomendacion del chef","Entradas", "Entradas", "Entradas", "Platos", "Platos","Platos", "Bebidas","Bebidas","Bebidas","Bebidas","Bebidas","Postres","Postres","Postres","Postres","Postres" 
+            
         ];
         
     }
