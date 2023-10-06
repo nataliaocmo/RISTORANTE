@@ -22,7 +22,7 @@ class ProductSeeder extends Seeder
            'name'=> "Pizza Peperoni",
            'price'=> 85000,
             'imagen'=> "PROYECTO-main\Comida\pizza_especialidad.jpg",
-           'category'=>"RECOMENDACIÓN DEL CHEF"
+           'category'=>"RECOMENDACION"
        ]);
        \App\Models\Product::create([
            
@@ -130,16 +130,7 @@ class ProductSeeder extends Seeder
             'category'=>"POSTRES"
          ]);
     }
-    public function definition(): array
-    {
-        return [
-            
-        ];
-        
-    }
-
-        
-}
+   }
     
        
     
