@@ -57,6 +57,44 @@ h1
     width: 60%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+   color: rgb(83,9,0);
+   background-color: white;
+   font-size: 2rem;
+
+}
+#registrado
+{
+    font-size: 3rem;
+   
+}
+
+#loginButton {
+    background-color: rgb(83,9,0);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#loginButton:hover {
+    background-color: rgb(102, 70, 66);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
   
   .close {
     float: right;
@@ -169,7 +207,7 @@ footer a{
     padding: 3rem;
     margin: 0px;
 }
-#italia 
+#italia
 {
     margin: 2rem;
     color: white;
