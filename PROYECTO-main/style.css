@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Handjet&family=Qwitcher+Grypen:wght@700&family=Roboto+Mono:wght@200&family=Tangerine&display=swap');
 
-/*header*/
 *{
     margin: 0;
     padding: 0;
@@ -262,3 +261,14 @@ h2{
 .carrito-total .btn-pagar:hover{
     scale: 1.05;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+fa-solid fa-plus sumar-cantidad{
+    
+    background-image: url("iconos/USER.png");
+}
+

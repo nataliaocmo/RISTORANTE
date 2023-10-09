@@ -46,9 +46,9 @@ input[type="password"] {
     background-color: white;
 }
 
-#sign {
-    text-align: center;
-    color: white;
+
+#sign input[type="submit"] {
+    color: #ffffff; 
 }
 
 #sign button {
