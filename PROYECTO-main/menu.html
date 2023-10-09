@@ -5,27 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="menu.css" rel="stylesheet">
-    <script src="" defer></script>
+    <script src="menu.js" defer></script>
     <title>pagina principal</title>
 
 </head>
 
 <body>
     <header>
-        
+
         <h1>Il Migliore</h1>
         <nav class="nav">
             <button class="btn" id="btnmenu"><img id="menuimg" src="iconos//menu toggle.png"></button>
             <div class="dropdown">
                 <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
-                <li><a href="sobreNosotros.html">Fundadores</a></li>
             </div>
         </nav>
-        <div class="user-btn-container">
-            <button class="btn" id="btnUser"><img src="iconos/USER.png"></button>
-        </div>
+        <nav class="nav2">
+            <div class="user-btn-container">
+                <button class="btn" id="btnUser"><img src="iconos/USER.png"></button>
+            </div>
+        </nav>
     </header>
-    
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Log In</h3>
+            <form>
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="button" id="loginButton">Log In</button>
+            </form>
+            <p>Si aún no te encuentras registrado, puedes hacerlo <a href="registro.html">aquí</a>.</p>
+        </div>
+    </div>
+
+
     <main>
         <div class="img">
             <p id="italia"> Comida Italiana</p>
@@ -39,7 +58,7 @@
             <div class="recomendacion">
                 <a href="index.html"> Recomendación del chef</a>
             </div>
-            <h3> il nostro menú</h3>
+            <h2> il nostro menú</h2>
             <div class="entradas">
                 <a href="index.html"> Entradas</a>
             </div>
