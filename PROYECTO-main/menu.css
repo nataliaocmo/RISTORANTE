@@ -115,7 +115,7 @@ footer a{
 }
 .img
 {
-    background-image: url("food.jpg");
+    background-image: url("Comida/food.jpg");
     opacity: 0.9;
     background-repeat: no-repeat;
     background-position: center;
@@ -203,7 +203,7 @@ footer a{
 
 .recomendacion
 {
-    background-image: url("especialidad.jpg");
+    background-image: url("Comida/especialidad.jpg");
     background-color: #cccccc;
     height: 300px;
     background-position: center;
@@ -220,7 +220,7 @@ footer a{
 }
 .entradas
 {
-    background-image: url("entradas.jpg");
+    background-image: url("Comida/entradas.jpg");
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -250,7 +250,7 @@ footer a{
     margin: 0px;
 }
 .Bedidas{
-    background-image: url("drinks.webp");
+    background-image: url("Comida/drinks.webp");
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -265,7 +265,7 @@ footer a{
     margin: 0px;
 }
 .Postres{
-    background-image: url("ghelato.jpg");
+    background-image: url("Comida/ghelato.jpg");
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
