@@ -15,25 +15,43 @@ body {
     color: white;
 }
 
-header {
-    background-color: #d1d0cb;
-    /*padding: 0;
-    text-align: center;*/
-    width: 100%;
+header.home {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
+    background-color: #d1d0cb;
+    padding: 0;
+    width: 100%;
 }
 
-h1 {
-    margin: 0;
+header.home h1 {
+    margin: 0 auto;
     font-size: 4rem;
+    font-weight: bold;
     color:black
 }
 
-h2 {
+header.home button {
+    background-color: #d1d0cb;
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+}
+
+
+header.home button img {
+    width: 32px; 
+    height: 32px; 
+}
+
+section.contenedor{
     display: flex;
-    justify-content: center;
+}
+
+h2{
+    justify-content: space-between;
+    text-align: center;
     background: rgb(83,9,0);
     background: radial-gradient(circle, rgba(83,9,0,1) 49%, rgb(53, 0, 0) 69%); 
     color: white;
@@ -56,6 +74,7 @@ h2 {
 }
 
 /* SECCION CONTENEDOR DE ITEMS*/
+
 .contenedor .producto .contenedor-items{
     margin-bottom: 10px;
     width: 100%;
@@ -242,9 +261,4 @@ h2 {
 }
 .carrito-total .btn-pagar:hover{
     scale: 1.05;
-}
-
-.home{
-    display: flex;
-    justify-content: space-between;
 }
