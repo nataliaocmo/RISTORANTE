@@ -61,7 +61,7 @@ class UserController extends Controller
     {
         //
     }
-    public function addOrder(Request $request){
+    public function addUser(Request $request){
         $name=$request->input('name');
         $email=$request->input('email');
         $adress=$request->input('adress');
@@ -73,7 +73,7 @@ class UserController extends Controller
         $user->adress=$adress;
         $user->password=$password;
         $user->save();
-        return response()-json(['mensaje'=>'usuario guardado con exito'],201);
+        return response()->json(['mensaje'=>'usuario guardado con exito'],201);
 
 
 
