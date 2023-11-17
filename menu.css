@@ -166,18 +166,8 @@ input[type="password"] {
    
 
 }
-h2
-{
-    display: flex;
-    justify-content: center;
-    background: rgb(83,9,0);
-    background: radial-gradient(circle, rgba(83,9,0,1) 49%, rgba(123,49,49,1) 69%); 
-    color: white;
-    padding: 1rem;
-    font-size: 4em;
-}
 
-h3,footer
+h2, h3,footer
 {
     display: flex;
     justify-content: center;
@@ -185,7 +175,8 @@ h3,footer
     background: radial-gradient(circle, rgba(83,9,0,1) 49%, rgba(123,49,49,1) 69%); 
     color: white;
     padding: 1rem;
-    font-size: 2em;
+    margin: 0px;
+    font-size: 2rem;
 }
 
 footer a{
