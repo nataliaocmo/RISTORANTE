@@ -273,15 +273,5 @@ fa-solid fa-plus sumar-cantidad{
 }
 
 
-use Illuminate\Http\Request;
 
-public function miFuncion(Request $request) {
-    $usuario = $request->server('PHP_AUTH_USER');
-    $contrasena = $request->server('PHP_AUTH_PW');
-
-    // $usuario contendrá el valor de PHP_AUTH_USER
-    // $contrasena contendrá el valor de PHP_AUTH_PW
-
-    // ... Resto del código ...
-}
 
