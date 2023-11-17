@@ -271,4 +271,18 @@ fa-solid fa-plus sumar-cantidad{
     
     background-image: url("iconos/USER.png");
 }
+@media (max-width: 800px) {
+    .contenedor
+    {
+        background-position: 50%;
+    }
+    
+}
+@media  secreen and (max-width: 1200px) {
+    .producto
+    {
+        background-position: 40%;
+    }
+    
+}
 
