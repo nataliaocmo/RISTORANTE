@@ -105,9 +105,9 @@ function agregarItemAlCarrito(titulo, precio, imagenSrc,total){
     }
 
     var itemCarritoContenido = 
-        `
+       `
         <div class="carrito-item">
-            <img src="${imagenSrc}" width="80px" alt="">
+            <img src="${imagenSrc}" width="70px" alt="">
             <div class="carrito-item-detalles">
                 <span class="carrito-item-titulo">${titulo}</span>
                 <div class="selector-cantidad">
@@ -203,6 +203,3 @@ function pagarClicked(){
 function reiniciarCarrito(){
     
 }
-
-
-
