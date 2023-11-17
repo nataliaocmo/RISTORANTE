@@ -271,17 +271,18 @@ fa-solid fa-plus sumar-cantidad{
     
     background-image: url("iconos/USER.png");
 }
-
-
-use Illuminate\Http\Request;
-
-public function miFuncion(Request $request) {
-    $usuario = $request->server('PHP_AUTH_USER');
-    $contrasena = $request->server('PHP_AUTH_PW');
-
-    // $usuario contendrá el valor de PHP_AUTH_USER
-    // $contrasena contendrá el valor de PHP_AUTH_PW
-
-    // ... Resto del código ...
+@media (max-width: 800px) {
+    .contenedor
+    {
+        background-position: 50%;
+    }
+    
+}
+@media  secreen and (max-width: 1200px) {
+    .producto
+    {
+        background-position: 40%;
+    }
+    
 }
 
