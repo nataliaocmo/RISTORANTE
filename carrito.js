@@ -1,5 +1,6 @@
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
+let url = 'http://127.0.0.1:8080/products';
 
 //Espermos que todos los elementos de la pàgina carguen para ejecutar el script
 if(document.readyState == 'loading'){
