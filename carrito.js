@@ -1,6 +1,5 @@
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
-let url = 'http://127.0.0.1:8080/products';
 
 //Espermos que todos los elementos de la pàgina carguen para ejecutar el script
 if(document.readyState == 'loading'){
@@ -208,4 +207,60 @@ function pagarClicked(){
 
 function reiniciarCarrito(){
     
+}
+
+async function displayProducts()
+{
+    const drinkInfo = document.getElementsByClassName('contenedor-items');
+
+
+    try {
+        let status = 'sin atender';
+        console.log(status);
+        const response = await fetch(`http://127.0.0.1:8080/api/products`);
+        const data = await response.json();
+        status = 'atendido';
+        console.log(status);
+        
+        drinkInfo.innerHTML = ""; // limpiar la pagina
+
+        await new Promise((resolve) => setTimeout(resolve, 2000)); //esperar a que se obtenga una respuesta
+
+
+        if (data.products) {
+            data.products.forEach(product => {
+                const productItem = document.createElement("div");
+                productItem.classList.add("item");
+
+                productItem.innerHTML = `
+                <img src="${product.img}" width="70px" alt="">
+                <div class="carrito-item-detalles">
+                    <span class="carrito-item-titulo">${product.name}</span>
+                    <div class="selector-cantidad">
+                    <i class="fa-solid fa-minus restar-cantidad"<img src="iconos/menos.png" style="width: 2em; height: 2em;" />>
+                    
+                </i>
+                <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                <i class="fa-solid fa-plus sumar-cantidad" <img src="iconos/mas.png" style="width: 2em; height: 2em;" />>
+                    
+                </i>
+                                
+                            </div>
+                    <span class="carrito-item-precio">${product.price}</span>
+                </div>
+                <button class="btn-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+                `;// reescribir el html 
+
+                globalDrink=cocktail;
+                drinkInfo.appendChild(cocktailItem);
+        
+            });
+        } else {
+            drinkInfo.innerHTML = "Cocktail not found.";
+        }
+    } catch (error) {
+        console.error(error);
+    }
 }
