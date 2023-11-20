@@ -43,6 +43,7 @@ function ready(){
     //Agregamos funcionalidad al botón comprar
     document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
 }
+
 //Funciòn que controla el boton clickeado de agregar al carrito
 function agregarAlCarritoClicked(event){
     var button = event.target;
@@ -260,8 +261,10 @@ async function displayProducts()
                     // reescribir el html 
 
                 // productInfo.appendChild(productItem);
+
         
             });
+            this.ready();
     } catch (error) {
         console.error(error);
     }
