@@ -42,6 +42,7 @@ function ready(){
 
     //Agregamos funcionalidad al botón comprar
     document.getElementsByClassName('btn-pagar')[0].addEventListener('click',pagarClicked)
+
 }
 
 //Funciòn que controla el boton clickeado de agregar al carrito
@@ -198,14 +199,47 @@ function ocultarCarrito(){
 //Eliminamos todos los elementos del carrito y lo ocultamos
 function pagarClicked(){
     alert("Gracias por la compra");
-    //Elimino todos los elmentos del carrito
-    var carritoItems = document.getElementsByClassName('carrito-items')[0];
-    while (carritoItems.hasChildNodes()){
-        carritoItems.removeChild(carritoItems.firstChild)
-    }
+
+    const form = document.getElementById('carrito');
+    // Agregar un evento de escucha para la presentación del formulario
+    form.addEventListener('submit', function(event) {
+    // Evitar que el formulario se envíe de manera predeterminada
+    event.preventDefault();
+
+    // Crear un objeto FormData para recopilar los datos del formulario
+    const formData = new FormData(form);
+
+    // Realizar la solicitud de fetch
+    fetch('http://127.0.0.1:8000/api/store',{
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => {
+        // Manejar la respuesta del servidor
+        if (!response.ok) {
+            throw new Error('Error en la solicitud');
+        }
+        return response.json(); // Suponiendo que el controlador devuelve datos JSON
+    })
+    .then(data => {
+        // Manejar los datos devueltos por el controlador
+        console.log(data);
+    })
+    .catch(error => {
+        // Manejar errores de red o errores del servidor
+        console.error(error);
+    });
+    });
+
+     //Elimino todos los elmentos del carrito
+     var carritoItems = document.getElementsByClassName('carrito-items')[0];
+     while (carritoItems.hasChildNodes()){
+         carritoItems.removeChild(carritoItems.firstChild)
+     }
+
     actualizarTotalCarrito();
     ocultarCarrito();
-    reiniciarCarrito();
+    reiniciarCarrito(); 
 }
 
 function reiniciarCarrito(){
@@ -234,6 +268,7 @@ async function displayProducts()
                 productItem.classList.add("item");
 
                 productInfo.innerHTML += `
+                <div class="item">
                     <span class="titulo-item" style=" display: block;
                     font-weight: bold;
                     text-align: center;
@@ -256,7 +291,9 @@ async function displayProducts()
                     padding: 0.3125em 0.9375em;
                     border-radius: 0.3125em;
                     cursor: pointer;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" > Agregar al Carrito</button>`;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" > Agregar al Carrito</button>
+                    </div>`;
+                    
                     
                     // reescribir el html 
 

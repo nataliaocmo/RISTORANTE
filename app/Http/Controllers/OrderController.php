@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Order;
 
 class OrderController extends Controller
 {
@@ -24,7 +25,17 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $order = new Order([
+            'id' => $request->input('id'),
+            'ProductsId' => $request->input('ProductsId'),
+            'OrderId' => $request->input('order_id'),
+            'quantity' => $request->input('quantity'),
+            
+        ]);
+        console.log($order);
+
+        // Guarda el nuevo usuario en la base de datos
+        $order->save();
     }
 
     /**
@@ -39,7 +50,7 @@ class OrderController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified resource in storage
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id

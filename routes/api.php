@@ -27,3 +27,8 @@ Route::post('autorizar',[AuthController::class,'autorizar']);
 
 Route::resource('products', ProductController::class); 
 
+Route::post('store',[ OrderController::class]);
+Route::get('id',[OrderController::class]);
+Route::get('ProductsId', [OrderController::class]);
+Route::get('OrderId', [OrderController::class]);
+Route::get('quantity', [OrderController::class]);
