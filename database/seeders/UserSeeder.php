@@ -2,24 +2,21 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Http\Controllers\UserController;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB; // Asegúrate de que esta línea esté presente
 
 class UserSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
-        \App\Models\User::create([
-           
-            'name'=> "",
-            'email'=> "",
-            'adress'=> "",
-            'password'=>"",
-         ]);
+        // Tu código de siembra aquí
+        DB::table('users')->insert([
+            'name' => "",
+            'email' => "",
+            'address' => "",
+            'password' => "",
+        ]);
+        this.UserController();
     }
 }
