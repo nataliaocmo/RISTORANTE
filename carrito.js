@@ -10,6 +10,14 @@ if(document.readyState == 'loading'){
 }
 
 function ready(){
+   
+    //Agregamos funcionalidad al boton Agregar al carrito
+    var botonesAgregarAlCarrito = document.getElementsByClassName('boton-item');
+    for(var i=0; i<botonesAgregarAlCarrito.length;i++){
+        var button = botonesAgregarAlCarrito[i];
+        button.addEventListener('click', agregarAlCarritoClicked);
+       
+    }
     
     //Agregremos funcionalidad a los botones eliminar del carrito
     var botonesEliminarItem = document.getElementsByClassName('btn-eliminar');
@@ -30,13 +38,6 @@ function ready(){
     for(var i=0;i<botonesRestarCantidad.length; i++){
         var button = botonesRestarCantidad[i];
         button.addEventListener('click',restarCantidad);
-    }
-
-    //Agregamos funcionalidad al boton Agregar al carrito
-    var botonesAgregarAlCarrito = document.getElementsByClassName('boton-item');
-    for(var i=0; i<botonesAgregarAlCarrito.length;i++){
-        var button = botonesAgregarAlCarrito[i];
-        button.addEventListener('click', agregarAlCarritoClicked);
     }
 
     //Agregamos funcionalidad al botón comprar
