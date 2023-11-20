@@ -17,3 +17,6 @@ php artisan migrate --force
 
 echo "Running seeders..."
 php artisan db:seed 
+
+echo "start api server"
+php artisan serve
