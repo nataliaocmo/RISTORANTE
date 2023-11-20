@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styloss.css">
+    <script src="index.js"></script>
+    <title>Pedido</title>
+</head>
+<body>
+    <header class="home">
+        <h1>Mis pedidos</h1>
+        <button><a href="menu.html"><img src="iconos/home.png"></a></button>
+    </header>
+    <main>
+        <div class="contenedor_izquierdo">
+            <h2>Pedidos</h2>
+            <div class="imagenes">
+                
+                <img id="display" src="" alt="">
+            <div id="Imagen"></div>
+            </div>
+        </div>
+        <div class="contenedor_derecho">
+            <input type="number" id="coctelID" required>
+            <button class="buscar"onclick="loadCoctelInfoFetch()">Buscar</button>
+            <div class="contenedor">
+                
+                <label>ID:<span id="cocteldex"></span></label>
+                <label>Nombre:<span id="coctelname"></span></label>
+                <label>Categoria:<span id="coctelCategoria"></span></label>
+                <div id="coctelCategoria"></div>
+                <label>Ingredientes:</label>
+                <div id="coctelIngredientes"></div>
+                <label>Preparación:</label>
+                <div id="coctelPreparación"></div>  
+                <button id="favoritoBtn" onclick="agregarAFavoritos()">Agregar a Favoritos</button>
+                <div id="loader" class="loader"></div>
+                <div id="loader" class="loader hidden"></div>
+
+
+        </div>
+        <h1>Favoritos</h1>
+        <div id="favoritosContainer"></div>
+        <button id="limpiarFavoritosBtn" onclick="limpiarFavoritos()">Clear</button>
+
+        </div>
+    </main>
+</body>
+</html>
