@@ -234,7 +234,15 @@ async function displayProducts()
                     <span class="titulo-item">${products.name}</span>
                     <img src="${products.img}" alt="" class="img-item"  style="width: 10em; height: 10em;">
                     <span class="precio-item">${products.price}</span>
-                    <button class="boton-item"  stylewidth: 2em; height: 2em; > Agregar al Carrito</button>`;
+                    <button class="boton-item"  style="display: block;
+                    margin: 0.625em auto;
+                    border: none;
+                    background-color: black;
+                    color: #fff;
+                    padding: 0.3125em 0.9375em;
+                    border-radius: 0.3125em;
+                    cursor: pointer;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" > Agregar al Carrito</button>`;
                     
                     // reescribir el html 
 
