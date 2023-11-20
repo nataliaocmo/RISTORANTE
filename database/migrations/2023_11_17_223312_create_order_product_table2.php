@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id(); 
             $table->unsignedBigInteger('order_id'); 
             $table->unsignedBigInteger('product_id'); 
+            $table->string('user');
+            
  
             // Columna para almacenar la cantidad de productos 
             $table->integer('quantity'); 
