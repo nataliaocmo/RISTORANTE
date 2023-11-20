@@ -74,13 +74,15 @@ h2{
 
 /* SECCION CONTENEDOR DE ITEMS*/
 
-.contenedor .producto .contenedor-items{
+/* Estilos base */
+.contenedor .producto .contenedor-items {
     margin-bottom: 10px;
     width: 100%;
     transition: .3s;
     height: 21.875em;
 }
-.contenedor .producto .contenedor-items >div{
+
+.contenedor .producto .contenedor-items > div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -90,7 +92,8 @@ h2{
     border: 0.0625em solid black;
     margin-right: 0.625em;
 }
-.contenedor .producto .contenedor-items .item{
+
+.contenedor .producto .contenedor-items .item {
     max-width: 62.5em;
     margin: auto;
     border: 1px solid #666;
@@ -99,15 +102,18 @@ h2{
     transition: .3s;
     align-items: center;
 }
-.contenedor .producto .contenedor-items .item .img-item{
+
+.contenedor .producto .contenedor-items .item .img-item {
     width: 12.5em;
     height: 10.625em;
 }
-.contenedor .producto .contenedor-items  .item:hover{
+
+.contenedor .producto .contenedor-items .item:hover {
     box-shadow: 0 0 0.625em #666;
-    scale: 1.05; 
+    transform: scale(1.05); /* Arreglado el error, debería ser transform, no scale */
 }
-.contenedor .producto .contenedor-items .item .titulo-item{
+
+.contenedor .producto .contenedor-items .item .titulo-item {
     display: block;
     font-weight: bold;
     text-align: center;
@@ -115,14 +121,16 @@ h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 1.25em;
 }
-.contenedor .producto .contenedor-items .item .precio-item{
+
+.contenedor .producto .contenedor-items .item .precio-item {
     display: block;
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.contenedor .producto .contenedor-items .item .boton-item{
+
+.contenedor .producto .contenedor-items .item .boton-item {
     display: block;
     margin: 0.625em auto;
     border: none;
@@ -133,6 +141,24 @@ h2{
     cursor: pointer;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+
+@media screen and (max-width: 500px) {
+    .contenedor .producto .contenedor-items > div {
+        width: 50%; 
+        margin-right: 0; 
+    }
+    .contenedor .producto .contenedor-items .item {
+        max-width: 50.5em;
+        margin: auto;
+        border: 1px solid #666;
+        border-radius: 0.3em;
+        padding: auto;
+        transition: .3s;
+        align-items: left;
+    }
+}
+
 
 /* seccion carrito */
 .carritos {
