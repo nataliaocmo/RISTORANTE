@@ -212,35 +212,34 @@ function reiniciarCarrito(){
 
 async function displayProducts()
 {
-    const drinkInfo = document.getElementsByClassName('contenedor-items');
+    const productInfo = document.getElementsByClassName('contenedor-items');
 
 
     try {
         let status = 'sin atender';
         console.log(status);
-        const response = await fetch(`http://127.0.0.1:8080/api/products`);
+        const response = await fetch(`http://127.0.0.1:8000/api/products`);
         const data = await response.json();
         status = 'atendido';
         console.log(status);
         
-        drinkInfo.innerHTML = ""; // limpiar la pagina
+        productInfo.innerHTML = ""; // limpiar la pagina
 
         await new Promise((resolve) => setTimeout(resolve, 2000)); //esperar a que se obtenga una respuesta
 
 
-            data.products.forEach(product => {
+            data.forEach(products => {
                 const productItem = document.createElement("div");
                 productItem.classList.add("item");
 
                 productItem.innerHTML += `
-                    <span class="titulo-item">${product.name}</span>
-                    <img src="${product.img}" alt="" class="img-item">
-                    <span class="precio-item">${product.price}</span>
+                    <span class="titulo-item">${products.name}</span>
+                    <img src="${products.img}" alt="" class="img-item">
+                    <span class="precio-item">${products.price}</span>
                     <button class="boton-item">Agregar al Carrito</button>
                 `;// reescribir el html 
 
-                globalDrink=cocktail;
-                drinkInfo.appendChild(cocktailItem);
+                // productInfo.appendChild(productItem);
         
             });
     } catch (error) {
