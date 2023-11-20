@@ -214,7 +214,6 @@ async function displayProducts()
 {
     const productInfo = document.getElementsByClassName('contenedor-items');
 
-
     try {
         let status = 'sin atender';
         console.log(status);
@@ -236,8 +235,9 @@ async function displayProducts()
                     <span class="titulo-item">${products.name}</span>
                     <img src="${products.img}" alt="" class="img-item">
                     <span class="precio-item">${products.price}</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                `;// reescribir el html 
+                    <button class="boton-item">Agregar al Carrito</button>`;
+                    
+                    // reescribir el html 
 
                 // productInfo.appendChild(productItem);
         
