@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+USE App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,4 @@ Route::post('autenticar',[AuthController::class,'autenticar']);
 Route::post('autorizar',[AuthController::class,'autorizar']);
 
 Route::resource('products', ProductController::class); 
+

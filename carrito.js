@@ -212,17 +212,15 @@ function reiniciarCarrito(){
 
 async function displayProducts()
 {
-    const productInfo = document.getElementsByClassName('contenedor-items');
-
+    const productInfo = document.getElementById('cont');
 
     try {
-        let status = 'sin atender';
-        console.log(status);
+       
+       
         const response = await fetch(`http://127.0.0.1:8000/api/products`);
         const data = await response.json();
-        status = 'atendido';
-        console.log(status);
-        
+       
+        console.log(data);
         productInfo.innerHTML = ""; // limpiar la pagina
 
         await new Promise((resolve) => setTimeout(resolve, 2000)); //esperar a que se obtenga una respuesta
@@ -232,12 +230,13 @@ async function displayProducts()
                 const productItem = document.createElement("div");
                 productItem.classList.add("item");
 
-                productItem.innerHTML += `
+                productInfo.innerHTML += `
                     <span class="titulo-item">${products.name}</span>
                     <img src="${products.img}" alt="" class="img-item">
                     <span class="precio-item">${products.price}</span>
-                    <button class="boton-item">Agregar al Carrito</button>
-                `;// reescribir el html 
+                    <button class="boton-item">Agregar al Carrito</button>`;
+                    
+                    // reescribir el html 
 
                 // productInfo.appendChild(productItem);
         
