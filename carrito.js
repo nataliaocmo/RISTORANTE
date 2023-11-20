@@ -231,7 +231,12 @@ async function displayProducts()
                 productItem.classList.add("item");
 
                 productInfo.innerHTML += `
-                    <span class="titulo-item">${products.name}</span>
+                    <span class="titulo-item" style=" display: block;
+                    font-weight: bold;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    padding: 1.25em;">${products.name}</span>
                     <img src="${products.img}" alt="" class="img-item"  style="width: 10em; height: 10em;">
                     <span class="precio-item">${products.price}</span>
                     <button class="boton-item"  style="display: block;
