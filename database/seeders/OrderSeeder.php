@@ -13,7 +13,7 @@ class OrderSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
+    { 
         \App\Models\Order::create([
            
             'products'=> "",
