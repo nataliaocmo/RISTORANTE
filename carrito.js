@@ -239,7 +239,11 @@ async function displayProducts()
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     padding: 1.25em;">${products.name}</span>
                     <img src="${products.img}" alt="" class="img-item"  style="width: 10em; height: 10em;">
-                    <span class="precio-item">${products.price}</span>
+                    <span class="precio-item" style=" display: block;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">${products.price}</span>
                     <button class="boton-item"  style="display: block;
                     margin: 0.625em auto;
                     border: none;
