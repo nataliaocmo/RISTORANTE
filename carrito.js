@@ -232,9 +232,9 @@ async function displayProducts()
 
                 productInfo.innerHTML += `
                     <span class="titulo-item">${products.name}</span>
-                    <img src="${products.img}" alt="" class="img-item">
+                    <img src="${products.img}" alt="" class="img-item"  style="width: 10em; height: 10em;">
                     <span class="precio-item">${products.price}</span>
-                    <button class="boton-item">Agregar al Carrito</button>`;
+                    <button class="boton-item"  stylewidth: 2em; height: 2em; > Agregar al Carrito</button>`;
                     
                     // reescribir el html 
 

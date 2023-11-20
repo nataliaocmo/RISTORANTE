@@ -92,7 +92,6 @@ h2{
     border: 0.0625em solid black;
     margin-right: 0.625em;
 }
-
 .contenedor .producto .contenedor-items .item {
     max-width: 62.5em;
     margin: auto;
@@ -104,8 +103,8 @@ h2{
 }
 
 .contenedor .producto .contenedor-items .item .img-item {
-    width: 12.5em;
-    height: 10.625em;
+    width: 10em;
+    height: 10em;
 }
 
 .contenedor .producto .contenedor-items .item:hover {
