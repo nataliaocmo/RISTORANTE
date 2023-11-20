@@ -29,6 +29,6 @@ class UserController extends Controller
         // Guarda el nuevo usuario en la base de datos
         $user->save();
 
-        return response()->json(['message' => 'Usuario creado correctamente'], 201);
+        return response()->json(['message' => 'Usuario creado correctamente'], 201);
     }
 }

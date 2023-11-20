@@ -17,6 +17,5 @@ class UserSeeder extends Seeder
             'address' => "",
             'password' => "",
         ]);
-        this.UserController();
     }
 }

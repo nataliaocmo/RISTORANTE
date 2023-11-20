@@ -27,7 +27,3 @@ Route::post('autorizar',[AuthController::class,'autorizar']);
 
 Route::resource('products', ProductController::class); 
 
-Route::prefix('users')->group(function () {
-    Route::post('menu.html',[UserController::class,'store']);
-});
-
