@@ -238,9 +238,9 @@ async function displayProducts()
                     text-transform: uppercase;
                     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                     padding: 1.25em;">${products.name}</span>
-                    <img src="${products.img}" alt="" class="img-item"  style="width: 10em; height: 10em;  display: flex;
-                    justify-content: center;
-                    align-items: center;">
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+                    <img src="${products.img}" alt="" class="img-item" style="width: 10em; height: 10em;">
+                  </div>
                     <span class="precio-item" style=" display: block;
                     text-align: center;
                     font-weight: bold;
